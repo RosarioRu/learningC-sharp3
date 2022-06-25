@@ -24,7 +24,7 @@ class PhoneBook
       }
       else
       {
-        Console.WriteLine("Are you finished with this program? ["Y" for yes, "Enter" for no]");
+        Console.WriteLine("Are you finished with this program? ['Y' for yes, 'Enter' for no]");
         string finishedAnswer = Console.ReadLine();
         if (finishedAnswer == "Y" || finishedAnswer == "y")
         {
@@ -41,7 +41,7 @@ class PhoneBook
   static void AddContact()
   {
     Console.WriteLine("NEW CONTACT");
-    Console.WriteLane("Enter a new contact name");
+    Console.WriteLine("Enter a new contact name");
     string name = Console.ReadLine();
     Console.WriteLine("Enter a new contact phone number");
     string number = Console.ReadLine();
@@ -67,7 +67,7 @@ class PhoneBook
     if (phoneNumbers.ContainsKey(friend))
     {
       string value = phoneNumbers[friend];
-      Console.WriteLine(friend + "\'s phone number is" + value);
+      Console.WriteLine(friend + "'s phone number is " + value);
     }
     else
     {
